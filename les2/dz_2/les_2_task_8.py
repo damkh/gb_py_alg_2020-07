@@ -14,7 +14,7 @@ def num_search(x, y):
     return s
 
 
-quantity = int(input("Введите количество чисел: "))
+quantity = int(input("Введите количество чисел (>0): "))
 k = int(input("Введите искомую цифру: "))
 s_all = 0
 
