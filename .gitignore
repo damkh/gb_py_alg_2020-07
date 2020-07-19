@@ -1,4 +1,8 @@
 .idea
+.directory
+./.directory
+./*/.directory
+./*/*/.directory
 ./*.pyc
 ./*/.*pyc
 ./*/*/*.pyc
