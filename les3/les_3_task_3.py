@@ -5,7 +5,7 @@ import random
 
 
 init_list = [random.randint(1, 100) for _ in range(0, 10)]
-print(init_list)
+print(f'Начальный массив: {init_list}')
 
 min_el = init_list[0]
 max_el = init_list[0]
@@ -21,4 +21,4 @@ for idx in range(0, len(init_list)):
 
 print(f'min: {min_el}, max: {max_el}')
 init_list[min_idx], init_list[max_idx] = max_el, min_el
-print(init_list)
+print(f'Измененный массив: {init_list}')
