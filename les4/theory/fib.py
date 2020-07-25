@@ -8,6 +8,7 @@ def test_fib(func):
         assert item == func(i)
         print(f'Test {i} OK')
 
+
 @functools.lru_cache()
 def fib(n):
     if n < 2:
