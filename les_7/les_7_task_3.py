@@ -12,7 +12,6 @@ import copy
 
 def get_median_sort(arr):
     arr = sorted(arr)
-    print(f'sorted arr: {arr}')
     return arr[len(arr) // 2]
 
 
@@ -45,6 +44,5 @@ m = 3
 lst = [random.randint(0, 20) for _ in range(2 * m + 1)]
 
 print(f'Начальный массив: {lst}')
-print(f'Отсортированный массив: {sorted(lst)}')
 print(f'Решение с сортировкой: {get_median_sort(copy.deepcopy(lst))}')
 print(f'Решение без сортировки: {get_median(copy.deepcopy(lst))}')
