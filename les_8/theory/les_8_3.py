@@ -41,17 +41,17 @@ def bfs(graph, start, finish):
     else:
         return f'Из вершины {start} нельзя попасть в вершину {finish}'
     print(parent)
-    # cost = 0
-    # way = deque([finish])
-    # i = finish
-    # while parent[i] != start:
-    #     cost += 1
-    #     way.appendleft(parent[i])
-    #     i = parent[i]
-    #
-    # cost += 1
-    # way.appendleft(start)
-    # return f'Best way from {start} to {finish} with cost: {cost} - {list(way)}'
+    cost = 0
+    way = deque([finish])
+    i = finish
+    while parent[i] != start:
+        cost += 1
+        way.appendleft(parent[i])
+        i = parent[i]
+
+    cost += 1
+    way.appendleft(start)
+    return f'Best way from {start} to {finish} with cost: {cost} - {list(way)}'
 
 
-print(bfs(g, 1, 4))
+print(bfs(g, 1, 2))
