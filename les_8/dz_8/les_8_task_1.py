@@ -13,7 +13,7 @@ g = [[0 if i == j else 1 for i in range(n)] for j in range(n)]
 print('Граф в виде матрицы смежности:')
 [[print(g[i][j], end=' ') if i < n - 1 else print(g[i][j]) for i in range(n)] for j in range(n)]
 
-print(f'Количество рукопожатий: {int(n *(n - 1) / 2)}')
+print(f'Количество рукопожатий: {int(n * (n - 1) / 2)}')
 
 
 

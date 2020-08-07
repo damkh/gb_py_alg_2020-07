@@ -15,6 +15,7 @@ g = [
     [0, 0, 7, 0, 8, 1, 0, 0],
     [0, 0, 0, 0, 0, 1, 2, 0],
 ]
+
 # g = [
 #     [0, 2, 0, 0, 0],
 #     [3, 0, 5, 9, 0],
@@ -45,6 +46,7 @@ def dks(graph, start):
             if min_cost > cost[i] and not is_visited[i]:
                 min_cost = cost[i]
                 start = i
+    # print(parent)
     cost_ways = []
     cost_way = namedtuple('cost_way', 'vertex, cost, way')
     for finish in range(g_len):
